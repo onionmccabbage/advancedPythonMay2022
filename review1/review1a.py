@@ -14,17 +14,17 @@ def mapRoots(start, number):
     roots = list( map(root, range(start,number+1)) )
     print(roots)
 
-# def compRoots(start, number):
-#     print('Using List comprehension')
-#     roots = [x**0.5 for x in range(start,number+1)]
-#     for root in roots:
-#         print (root)
+def compRoots(start, number):
+    print('Using List comprehension')
+    roots = [x**0.5 for x in range(start,number+1)]
+    for root in roots:
+        print (root)
 
-# def genRoots(start, number):
-#     print('Using Generator comprehension')
-#     roots = (x**0.5 for x in range(start,number+1))
-#     for root in roots:
-#         print (root)
+def genRoots(start, number):
+    print('Using Generator comprehension')
+    roots = (x**0.5 for x in range(start,number+1))
+    for root in roots:
+        print (root)
 
 if __name__ == '__main__':
     number = 0
@@ -32,5 +32,5 @@ if __name__ == '__main__':
         number = int(float(input('Enter number : ')))
     start = 0
     mapRoots(start, number)
-    # compRoots(start, number)
-    # genRoots(start, number)
+    compRoots(start, number)
+    genRoots(start, number)

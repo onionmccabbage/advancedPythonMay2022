@@ -25,15 +25,16 @@ Monday
 > functional programming: map filter and reduce
 > Loading local and remote data (requests)
 > after lunch review
-- instrinsics
-- comprehensions, generators and yield
+> instrinsics
+> comprehensions, generators and yield
 
 Tuesday
-- functional programming: parameters
-- processing text/json
+q - is there an annotation we can import to help with encoding classes (aboid writing custom, encoder)
+> functional programming: parameters
+> processing text/json
   - json.loads() takes JSON and returns Python structure
   - json.dumps() takes Python and returns JSON
-- persisting files: read/write/append/exclusive/overwrite, text, bytes, json
+> persisting files: read/write/append/exclusive/overwrite, text, bytes, json
 - databases
   see https://wiki.python.org/moin/DatabaseProgramming
 - other db connections
