@@ -18,11 +18,11 @@ Monday
 - intro and welcome
   - what do you currently know
   - what do you want to know
-- classes 
-- abstract and concrete classes
-- name mangled members
-- if name-main...
-- using decorators
+> classes 
+> abstract and concrete classes
+> name mangled members
+> if name-main...
+> using decorators
 - functional programming: map filter and reduce
 - after lunch review
 - instrinsics
