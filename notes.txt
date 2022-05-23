@@ -1,0 +1,97 @@
+  Python Advanced
+  ===============
+
+   23-26 May 2022
+    Toby Dussek
+
+9:30 start
+11:00 coffee
+12:30 lunch
+3:00 tea
+4:30 end
+
+
+
+Python code lives in classes (or in functions), in modules, which live in packages (folder)
+
+Monday
+- intro and welcome
+  - what do you currently know
+  - what do you want to know
+- classes 
+- abstract and concrete classes
+- name mangled members
+- if name-main...
+- using decorators
+- functional programming: map filter and reduce
+- after lunch review
+- instrinsics
+- comprehensions, generators and yield
+
+Tuesday
+- functional programming: parameters
+- processing text/json
+  - json.loads() takes JSON and returns Python structure
+  - json.dumps() takes Python and returns JSON
+- persisting files: read/write/append/exclusive/overwrite, text, bytes, json
+- databases
+  see https://wiki.python.org/moin/DatabaseProgramming
+- other db connections
+- Create, Read and Update (and DELETE) - CRUD operations
+- populate db with sample data
+- read and nicely format values from the db
+- explore 'typicode' API as a static data source for JSON
+  https://pastebin.com/tdbwARpY
+- after lunch review exercise 
+  ask questions, help each other, share code (screen-share)
+- we will be using the 'requests' library on Wednesday
+  (you may come across the urllib.requests which is the old-skool way of doing things)
+
+Wednesday
+- context manager - switch context e.g. for handling data input and output
+- networking server/client 
+- Testing: 
+  - doctest
+  see https://docs.python.org/3/library/doctest.html
+  - unittest
+- after lunch lab exercise
+
+Thursday
+- recordings...
+- pytest
+- profiling
+- multi threading, performance
+- after lunch lab exercise
+- logging - context mgr, by-month/by-day, db log, log access and format
+- iterators __iter__
+- named tuple
+- zip
+- deque, defaultdict etc
+- all my code available online https://github.com/onionmccabbage/advpymar2022/upload/main
+- feedback
+
+
+
+Useful Resources
+- https://pynative.com/python-exercises-with-solutions/
+- https://realpython.com/
+- moving from Py2 to Py3
+  https://docs.python.org/3/howto/pyporting.html
+
+
+
+
+https://teams.microsoft.com/l/meetup-join/19:meeting_YWMxYjA4OWUtYzcwMS00MDkzLThmYTktYjA0MDNhMWNjYTE0@thread.v2/0?context=%7B%22Tid%22:%2248852407-12ea-48e5-9625-3a29b0f5c452%22,%22Oid%22:%224486b702-3fb8-4cb8-8476-a40eb1ad65da%22%7D
+
+
+
+
+
+
+
+
+
+
+
+
+
