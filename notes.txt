@@ -11,11 +11,10 @@
 4:30 end
 
 
-
 Python code lives in classes (or in functions), in modules, which live in packages (folder)
 
 Monday
-- intro and welcome
+> intro and welcome
   - what do you currently know
   - what do you want to know
 > classes 
@@ -23,8 +22,9 @@ Monday
 > name mangled members
 > if name-main...
 > using decorators
-- functional programming: map filter and reduce
-- after lunch review
+> functional programming: map filter and reduce
+> Loading local and remote data (requests)
+> after lunch review
 - instrinsics
 - comprehensions, generators and yield
 
