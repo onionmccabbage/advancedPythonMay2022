@@ -29,7 +29,10 @@ Monday
 > comprehensions, generators and yield
 
 Tuesday
-q - is there an annotation we can import to help with encoding classes (aboid writing custom, encoder)
+> is there an annotation we can import to help with encoding classes (avoid writing custom encoder)
+  - use the __dict__ as a defaulrt encode source
+> passing headers etc. to a post method or requests
+  see https://www.programcreek.com/python/example/6251/requests.post
 > functional programming: parameters
 > processing text/json
   - json.loads() takes JSON and returns Python structure
@@ -42,7 +45,6 @@ q - is there an annotation we can import to help with encoding classes (aboid wr
 - populate db with sample data
 - read and nicely format values from the db
 - explore 'typicode' API as a static data source for JSON
-  https://pastebin.com/tdbwARpY
 - after lunch review exercise 
   ask questions, help each other, share code (screen-share)
 - we will be using the 'requests' library on Wednesday
@@ -60,7 +62,7 @@ Wednesday
 Thursday
 - recordings...
 - pytest
-- profiling
+- profiling: timings etc. (cprofile)
 - multi threading, performance
 - after lunch lab exercise
 - logging - context mgr, by-month/by-day, db log, log access and format
@@ -68,6 +70,7 @@ Thursday
 - named tuple
 - zip
 - deque, defaultdict etc
+- if time - some words on Flask as MVC
 - all my code available online https://github.com/onionmccabbage/advpymar2022/upload/main
 - feedback
 

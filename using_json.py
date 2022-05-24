@@ -11,7 +11,7 @@ def main():
     print(b)
 
 # we can use JSON to encode a class
-class Item: # this implicitlyy inherists from 'object'
+class Item: # this implicitly inherists from 'object'
     '''
     this class encapsulated items that have a name and a cost
     Name is a string, cost is a positive float'''
@@ -51,8 +51,8 @@ if __name__ == '__main__':
     z = Item('Zoe', 28.00) # expects a string and a float
     # can we JSON encode the class instance?
     # z_j = json.dumps(z) # fail
-    z_j = json.dumps(z, cls=ItemEncoder) # usee our encoder to encodee an instance of an Item
+    z_j = json.dumps(z, cls=ItemEncoder) # use our encoder to encodee an instance of an Item
     print(z_j)
-    # we coan just serializee the __dict__ of ANY class
+    # we coan just serialize the __dict__ of ANY class
     x = json.dumps(z.__dict__)
     print(x)
