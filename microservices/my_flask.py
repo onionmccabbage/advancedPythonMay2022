@@ -13,9 +13,18 @@ def root():
 
 @app.route('/home')
 def home():
-    content = '<h2>Time for Coffee</h2>'
+    content = '<h2>Time for Coffee</h2><a href="http://127.0.0.1:5000">root</a>'
     return content
 
+@app.route('/greet') # we can have several routes with one handler
+@app.route('/greet/<name>') # we can pass parameters inside <...>
+def greet(name=None): # default value of 'name' will be None
+    return render_template('greet.html', name=name) # exists in template package
+
+@app.route('/data')
+def data():
+    struct = {"name":"Deidre", "age":42, "member":True}
+    return struct # Flask will parse the structure into JSON
 
 if __name__ == '__main__':
     # to exercise this code
