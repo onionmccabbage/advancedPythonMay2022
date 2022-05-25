@@ -1,16 +1,17 @@
 import unittest
 
-
-import unittest
-
 from my_point_class import Point
 
 class testPoint(unittest.TestCase): # inherit from TestCase
     # set up before each test (so each test is independent)
     def setUp(self):
-        # before each test,create a fresh Point instance
+        # before each test, create a fresh Point instance
         self.point = Point(3, 5)
     # declare test cases
+    def testPointCounter(self):
+        '''how many points will exist?'''
+        # self.assertEqual( Point.points, 6) # tests should be independent, but all points exists here
+        self.assertGreater(Point.points, 6) # more than one point - one for each test!
     def testMoveByA(self):
         '''test the moveBy method alters x and y correctly'''
         self.point.moveBy(5, 2)
@@ -27,13 +28,12 @@ class testPoint(unittest.TestCase): # inherit from TestCase
         self.point.moveBy(0, -1) # we now have (3, 4)
         r = self.point.hypot()
         self.assertEqual( r, 5.00 ) # NB the hypot wll be a float
+    def testHypotB(self):
+        r = self.point.hypot()
+        self.assertAlmostEqual( r, 5.83, places=2 )
     def testExceptionRaised(self):
         with self.assertRaises(TypeError):
             Point('3', 4) # string where we expected an int
-    def testPointCounter(self):
-        '''how many points will exist?'''
-        # self.assertEqual( Point.points, 6) # tests should be independent, but all points exists here
-        self.assertGreater(Point.points, 1) # more than one point
 
 if __name__ == '__main__':
     unittest.main() # this will invoke our tests - runs aything beginning with 'test'

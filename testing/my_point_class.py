@@ -45,3 +45,6 @@ if __name__ == '__main__':
     p2.moveBy(6, 7)
     print( p2.display() ) # (3, 3)
     print( Point.points )
+
+    p3 = Point(3,5)
+    print( p3.hypot() ) 
