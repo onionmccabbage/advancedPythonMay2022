@@ -1,0 +1,38 @@
+Advanced Python Review 4 ten mins after taking us to 3:25
+========================
+This exercise is an opportunity to consider architecture as well as build a solution
+There is an API end-point here: https://swapi.dev/api  	   (it is a Python API written in Django)
+(It includes some documentation here: https://swapi.dev/documentation)
+
+To use it, pass parameters for 'category' and 'id' e.g.
+  https://swapi.dev/api/people/1
+  https://swapi.dev/api/species/3
+Category can be any one of 'people', 'planets', 'species' or 'vehicles' (maybe use a named tuple for these)
+The id can be in the range 1-6 (though some id values currently fail, so catch exceptions)
+NB 'Vehicles' is problematic, but vehicle id=6 works
+
+You could ask the user for a category and an id, read values in from a data file or use sys.argv
+In all cases, check they are valid, then make a get request and show the returned json
+(You can get a list of valid categories from the API end-point)
+Append a few data properties to a text file
+  E.g. every category includes a 'name' property
+  The 'people' category includes 'hair_color' and 'height'
+  The 'planets' category includes 'orbital_period' and 'population'
+  The 'species' category includes 'designation' and 'homeworld'
+  The 'vehicles' caltegory includes 'manufacturer' and 'model'
+
+Optional
+--------
+Architect your application so you have classes for 'People', 'Planets', 'Species' and 'Vehicles'
+These classes could all descend from a common base class called 'Swapi'
+Populate an instance of the relevant class, depending on the returned data
+Try to make the request happen in it's own thread, returning data via the 'join' method
+Also write the 'swapi_service' in a separate module (maybe use client-server architecture)
+(You could encapsulate validation and error-handling in classes too, maybe with decorators)
+
+Super Optional
+--------------
+Use a separate thread to make a request for all the categories, then offer these as options for the user
+As soon as their 'category/id' request returns, make further (multi-threaded) requests for each film in the returned data set
+Use timers to explore the performance of your solution
+Write some unit tests (in pytest, unittest or doctest)

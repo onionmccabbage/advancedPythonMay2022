@@ -1,0 +1,5 @@
+Name: C-3PO Height: 167cm
+Name: Luke Skywalker Height: 172cm
+Name: Luke Skywalker Height: 172cm
+Name: Darth Vader Height: 202cm
+Name: Leia Organa Height: 150cm
