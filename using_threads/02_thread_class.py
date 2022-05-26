@@ -4,6 +4,8 @@ import time
 import sys
 import timeit # the timeit tool is a better timer than the 'time' library
 
+from memory_profiler import profile
+
 class MyClass(Thread): # we inherit from the Thread class, so our class is a thread
     def __init__(self, n):
         Thread.__init__(self) # call the parent inititializer
@@ -13,6 +15,7 @@ class MyClass(Thread): # we inherit from the Thread class, so our class is a thr
             time.sleep(random.random()*0.1) # about 2.5 seconds in all
             sys.stdout.write(self.n)
     # here we override the 'run' method of the Thread class
+    @profile
     def run(self):
         self.doStuff() # called when this thread starts
 

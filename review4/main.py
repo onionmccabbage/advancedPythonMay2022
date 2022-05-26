@@ -7,10 +7,13 @@ from vehicles import Vehicles
 from planets import Planets
 from species import Species
 
+from memory_profiler import profile
+
 class Menu: # I chose not to descend from the Thread class, but I can still call 'run()'
 
     categories = ('people', 'planets', 'species', 'vehicles')
 
+    @profile
     def __init__(self):
         self.menu_choices = {
             "1":self.getPeople,

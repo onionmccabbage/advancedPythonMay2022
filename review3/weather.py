@@ -54,4 +54,4 @@ def useLocationGenerator():
 if __name__ == '__main__':
     askUser()
     useLocationGenerator()
-    readCities()
+    # readCities()
