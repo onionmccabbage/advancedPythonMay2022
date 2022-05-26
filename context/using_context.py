@@ -15,7 +15,7 @@ def stdout_redirect(new_stdout):
 
 if __name__ == '__main__':
     with open('my_log.txt', 'a') as fobj: # we now have a file access object
-        with stdout_redirect(fobj):
+        with stdout_redirect(fobj): # context needs a 'with' operation
             #we can write many lines
             print('''Here are several lines we will capture
 They all end up in our log file
