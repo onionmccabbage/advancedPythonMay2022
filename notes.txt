@@ -38,41 +38,55 @@ Tuesday
   - json.loads() takes JSON and returns Python structure
   - json.dumps() takes Python and returns JSON
 > persisting files: read/write/append/exclusive/overwrite, text, bytes, json
-- databases
+> databases
   see https://wiki.python.org/moin/DatabaseProgramming
-- other db connections
-- Create, Read and Update (and DELETE) - CRUD operations
-- populate db with sample data
-- read and nicely format values from the db
-- explore 'typicode' API as a static data source for JSON
-- after lunch review exercise 
+> other db connections
+> Create, Read and Update (and DELETE) - CRUD operations
+> populate db with sample data
+> read and nicely format values from the db
+> explore 'typicode' API as a static data source for JSON
+> after lunch review exercise 
   ask questions, help each other, share code (screen-share)
-- we will be using the 'requests' library on Wednesday
+> we will be using the 'requests' library on Wednesday 
   (you may come across the urllib.requests which is the old-skool way of doing things)
 
 Wednesday
-- context manager - switch context e.g. for handling data input and output
-- networking server/client 
-- Testing: 
-  - doctest
+> context manager - switch context e.g. for handling data input and output
+> security: send output to a secure location (microservice)
+  e.g. a login class would send to secure location
+  but everything else uses the stout default
+  idea: make it a decorator!!
+> networking server/client (microservices)
+> Testing: 
+  > doctest
   see https://docs.python.org/3/library/doctest.html
-  - unittest
-- after lunch lab exercise
+  > unittest
+> after lunch lab exercise
+> pytest
 
 Thursday
-- recordings...
-- pytest
+
+https://api.openweathermap.org/data/2.5/weather?q=cape+town,za&units=metric&APPID=48f2d5e18b0d2bc50519b58cce6409f1
+
 - profiling: timings etc. (cprofile)
-- multi threading, performance
-- after lunch lab exercise
+- multi threading, performance (thread functions and thread classes)
+> q can we tell the queue to end by passing something? pass None then conditional
+> q how can we join many threads... - create a collection and iterate over it
+> Python has -u to unbuffer the output
+> Python has -O to optimize code (especially usefull for threading)
+> after lunch lab exercise
 - logging - context mgr, by-month/by-day, db log, log access and format
 - iterators __iter__
 - named tuple
 - zip
 - deque, defaultdict etc
-- if time - some words on Flask as MVC
-- all my code available online https://github.com/onionmccabbage/advpymar2022/upload/main
+> if time - some words on Flask as MVC
 - feedback
+
+
+
+
+
 
 
 

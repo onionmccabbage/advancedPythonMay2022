@@ -1,0 +1,54 @@
+Python Review 3
+===============
+There is a REST API here:
+http://api.openweathermap.org/data/2.5/weather?q=athlone,ie&units=metric&APPID=48f2d5e18b0d2bc50519b58cce6409f1
+You will pass in 'city' and 'country' values, then show the results for description, temperature and wind speed/direction
+
+Architecture:
+Use separate modules for individual functionalilty
+Use classes and/or functions
+
+Details:
+In a new package, write modules to implement a weather service and related functionality
+You can use the 'openweathermap' end-point API to get the current weather (as JSON):
+Remember to import the 'requests' library
+
+In your code, ask the user to input a city and a country (athlone and ie above) and inject them into the url
+You could also pass these in as sys.argv parameters, or provide defaults in case they are missing
+Validate that they entered a non-empty string for the city, and 2 or 3 letters for the country code
+
+Make a 'get' request to the openweathermap API, using the city and country values
+Get hold of the response JSON as a Python structure
+Print the weather description, temperature, wind-speed and wind-direction
+  e.g. if your returned data structure is called 'weather', do something like this: 
+    desc = weather['weather'][0]['description']
+    temp = weather['main']['temp']
+    wspd = weather['wind']['speed']
+    wdir = weather['wind']['deg']
+
+For every successful weather request, append the results to a file
+
+Optional:
+Validate the country by checking against a tuple of permitted values
+Write a custom generator which yields a number of city/country pairs, 
+then use this generator to make weather requests for the __next__ city/country pair
+Append the following 'city, country' values into a text file:
+'''Athlone,ie
+Galway,ie
+Hull,uk
+Canberra,aus
+Berlin,de
+Madrid,es'''
+Read in these city/country pairs and for each make a request for the current weather
+(You will need to use 'readline' rather than 'read')
+
+Use a client/server architecture: 
+The client calls the weather API then sends relevant data to your server, which puts into storage (text-file, DB, you choose)
+You could use context redirection to specify where the output is sent
+Also provide a means to retrieve historical records (from the text-file, DB, etc.)
+
+Write a 'Weather' class and populate it from some retrieved values (e.g. description, temperature, wind)
+Use this weather class to nicely output reports (e.g. using __str__)
+
+Write an Encoder class to JSON Encode your Weather class
+Also write a Decoder class to retrieve the weather

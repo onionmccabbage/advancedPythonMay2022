@@ -1,0 +1,12 @@
+Description: broken clouds Temperature: 18°C in Ely
+The wind speed is 8.23 coming from 230° 
+Description: overcast clouds Temperature: 14°C in Athlone
+The wind speed is 7.75 coming from 273° 
+Description: broken clouds Temperature: 13°C in Galway
+The wind speed is 8.62 coming from 268° 
+Description: few clouds Temperature: 21°C in Madrid
+The wind speed is 4.12 coming from 330° 
+Description: overcast clouds Temperature: 14°C in Athlone
+The wind speed is 7.75 coming from 273° 
+Description: broken clouds Temperature: 13°C in Galway
+The wind speed is 8.62 coming from 268° 

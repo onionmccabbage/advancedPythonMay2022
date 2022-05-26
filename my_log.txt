@@ -1,0 +1,8 @@
+Here are several lines we will capture
+They all end up in our log file
+Each is redirected by our context managing function
+This text also gets yields to the file access object
+Here are several lines we will capture
+They all end up in our log file
+Each is redirected by our context managing function
+This text also gets yields to the file access object
