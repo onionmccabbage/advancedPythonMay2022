@@ -8,7 +8,7 @@ import random
 import sys
 import timeit
 
-# here is the functio  we will run as a thread
+# here is the function we will run as a thread
 def myfunc(n):
     for i in range(1,50):
         # fifty times 0.05 is 2.5 so we expect to wait ~2.5 sec
